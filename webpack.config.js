@@ -6,9 +6,8 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const HtmlWebpackPluginConfig = new HtmlWebPackPlugin({
-	template: __dirname + '/src/index.html',
-	filename: 'index.html',
-	inject: 'body'
+	template: __dirname + '/docs/index.html',
+	filename: './index.html'
 });
 
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -21,10 +20,10 @@ module.exports = {
     entry: './src/index.js',
     output: {
         filename: './app.js',
-        path: __dirname + '/public'
+        path: __dirname + '/docs'
     },
     devServer:{
-        contentBase: "./public",
+        contentBase: "./docs",
         port: 3000,
         historyApiFallback: true,
     },
