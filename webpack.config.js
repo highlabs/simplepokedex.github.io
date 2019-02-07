@@ -21,8 +21,7 @@ module.exports = {
     entry: './src/index.js',
     output: {
         filename: './app.js',
-        path: __dirname + '/public',
-        publicPath: '/public'
+        path: __dirname + '/public'
     },
     devServer:{
         contentBase: "./public",
@@ -84,12 +83,11 @@ module.exports = {
                             minimize: true
                         }
                     }, {
-                            loader: "sass-loader",
-                            options: {
-                                minimize:true
-                            }
+                        loader: "sass-loader",
+                        options: {
+                            minimize:true
+                        }
                     }],
-                    // use style-loader in development
                     fallback: "style-loader"
                 })
             },
