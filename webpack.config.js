@@ -21,11 +21,13 @@ module.exports = {
     entry: './src/index.js',
     output: {
         filename: './app.js',
-        path: __dirname + '/public'
+        path: __dirname + '/public',
+        publicPath: '/'
     },
     devServer:{
         contentBase: "./public",
-        port: 8080
+        port: 3000,
+        historyApiFallback: true,
     },
     optimization: {
         minimizer: [
