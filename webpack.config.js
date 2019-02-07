@@ -22,7 +22,7 @@ module.exports = {
     output: {
         filename: './app.js',
         path: __dirname + '/public',
-        publicPath: '/'
+        publicPath: '/public'
     },
     devServer:{
         contentBase: "./public",
