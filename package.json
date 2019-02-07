@@ -2,6 +2,10 @@
   "name": "simple_pokedex",
   "version": "0.1.0",
   "private": true,
+<<<<<<< HEAD
+=======
+  "homepage": "https://1994mateus.github.io/",
+>>>>>>> e7639bd5f252db9a7c204a01c6e3faf4af62a539
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.2.1",
