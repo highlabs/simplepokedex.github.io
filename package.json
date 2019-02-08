@@ -2,10 +2,6 @@
   "name": "simple_pokedex",
   "version": "0.1.0",
   "private": true,
-<<<<<<< HEAD
-=======
-  "homepage": "https://1994mateus.github.io/",
->>>>>>> e7639bd5f252db9a7c204a01c6e3faf4af62a539
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.2.1",
@@ -19,7 +15,7 @@
     "react-spinkit": "^3.0.0"
   },
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack-dev-server --progress --colors --inline --hot",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --progress --colors --inline --hot --open",
     "build": "cross-env NODE_ENV=production webpack --progress -p"
   },
   "eslintConfig": {
