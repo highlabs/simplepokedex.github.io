@@ -6,9 +6,9 @@ import Routes from './Routes'
 
 class App extends Component {
   render() {
-    var test = process.env.PUBLIC_URL
+    var url = process.env.PUBLIC_URL
     return (
-      <BrowserRouter basename={'https://1994mateus.github.io/simplepokedex.github.io/'}>
+      <BrowserRouter basename={url}>
         <div className="App">
           <Routes />
         </div>
