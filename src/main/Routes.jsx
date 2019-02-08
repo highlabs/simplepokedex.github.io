@@ -6,7 +6,7 @@ import Pokemon from '../components/pokeApi/Pokemon'
 
 export default props =>
     <Switch>
-        <Route exact path='/' component={PokeAPI} />
+        <Route exact path='https://1994mateus.github.io/simplepokedex.github.io/' component={PokeAPI} />
         <Route path='/:id' component={Pokemon} />
         <Redirect from='*' to='/' />
     </Switch>
