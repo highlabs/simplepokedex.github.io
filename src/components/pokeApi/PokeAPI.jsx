@@ -19,8 +19,10 @@ export default class PokeAPI extends Component{
         axios(request)
             .then(response => {
                 const lista = []
-                this.state.next = response.data.next
-                this.state.previous = response.data.previous
+                this.setState({
+                    next: response.data.next,
+                    previous: response.data.previous
+                })
                 response.data.results.forEach(function(obj){
                     const id = getPokemonId(obj.url)
                     lista.push({
