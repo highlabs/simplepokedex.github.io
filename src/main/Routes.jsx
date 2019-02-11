@@ -7,6 +7,6 @@ import Pokemon from '../components/pokeApi/Pokemon'
 export default props =>
     <Switch>
         <Route exact path='/' component={PokeAPI} />
-        <Route path='/:id' component={Pokemon} />
+        <Route path='/:name' component={Pokemon} />
         <Redirect from='*' to='/' />
     </Switch>

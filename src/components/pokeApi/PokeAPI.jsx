@@ -72,7 +72,7 @@ export default class PokeAPI extends Component{
         return this.state.listPokemons.map(pokemon =>{
             return (                
                 <div key={pokemon.id} className={"col-sm-2" + (pokemon.id.match(/[1|6]$/) ? ' offset-md-1' : '')}>
-                    <Link to={`/${pokemon.id}`} style={{ textDecoration: 'none' }}>
+                    <Link to={`/${pokemon.name.toLowerCase()}`} style={{ textDecoration: 'none' }}>
                         <div className="card">
                             <img className="card-img-top" src={pokemon.image} alt=""/>
                             <h5 className="card-title">{pokemon.name}</h5>

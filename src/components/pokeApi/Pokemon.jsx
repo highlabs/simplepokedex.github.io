@@ -10,12 +10,12 @@ const imgBaseUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/spr
 
 export default class Pokemon extends Component{
     state = { 
-        pokeId: baseUrl+this.props.match.params.id,
+        pokeName: baseUrl+this.props.match.params.name,
         pokemon: [] 
     }
 
     componentWillMount(){
-        axios(this.state.pokeId)
+        axios(this.state.pokeName)
             .then(response => {
                 this.setState({ pokemon: response });
             })
