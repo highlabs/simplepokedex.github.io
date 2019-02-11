@@ -5,7 +5,7 @@ import Main from '../template/Main'
 import { prettifyPokemonName } from '../../utils';
 const Spinner = require('react-spinkit');
 
-const baseUrl = "http://pokeapi.salestock.net/api/v2/pokemon/"
+const baseUrl = "http://pokeapi.co/api/v2/pokemon/"
 const imgBaseUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"
 
 export default class Pokemon extends Component{

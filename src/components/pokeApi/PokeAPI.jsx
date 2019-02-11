@@ -5,7 +5,7 @@ import Main from '../template/Main'
 import { getPokemonId, prettifyPokemonName } from '../../utils';
 import './PokeAPI.css'
 
-const baseUrl = "http://pokeapi.salestock.net/api/v2/pokemon/"
+const baseUrl = "https://pokeapi.co/api/v2/pokemon/"
 const imgBaseUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"
 
 export default class PokeAPI extends Component{
